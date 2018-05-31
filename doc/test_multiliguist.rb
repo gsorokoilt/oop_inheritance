@@ -11,8 +11,8 @@ class TestMultilinguist < MiniTest::Test
     end
 
     def test_local_language_of_a_country
-      language_of_us = @linguist.language_in('uk')
-      assert_equal(language_of_us, @local_language)
+      language_used = @linguist.language_in('uk')
+      assert_equal(language_used, @local_language)
     end
 
 
