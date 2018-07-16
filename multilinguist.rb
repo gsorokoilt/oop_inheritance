@@ -52,3 +52,20 @@ class Multilinguist
     json_response['translationText']
   end
 end
+
+
+class MathGenius < Multilinguist
+
+  def total_in_local_language(list)
+    list = []
+    x= list.sum
+    message= say_in_local_language("The total is")
+    p message + x
+  end
+  todd = MathGenius.new
+  travel_to("France")
+  num=total_in_local_language(1,2,3,4)
+end
+
+
+p num
